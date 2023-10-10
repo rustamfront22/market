@@ -1,0 +1,47 @@
+.basket {
+    &__content{
+        @apply grid grid-cols-[minmax(0,_1fr)_minmax(0,_320px)] gap-5
+    }
+    &__info{
+        @apply border h-min
+    }
+    &__list{
+        @apply mb-10 border-x rounded-lg overflow-hidden;
+    }
+    &__item{
+        @apply sm:grid sm:grid-cols-[minmax(0,_56px)_minmax(0,_1fr)_minmax(0,_1fr)_minmax(0,auto)] flex flex-col w-full justify-between gap-4 border-b py-3 first:border-t items-center px-5;
+    }
+    &__item-img{
+        @apply w-14 h-14 bg-gray-300 rounded-lg;
+        img{
+            @apply w-full h-full object-contain;
+        }
+    }
+    &__item-info{
+
+    }
+    &__item-name{
+        @apply sm:text-start text-center;
+    }
+    &__item-price{
+        @apply flex gap-2 sm:justify-start justify-center;
+    }
+    &__item-discount{
+        @apply text-gray-400;
+    }
+    .product__card-count{
+        @apply mx-auto w-[150px];
+        input{
+            @apply border-secondary text-secondary;
+        }
+    }
+    &__empty{
+        @apply py-10 mb-10 border rounded-lg;
+        svg{
+            @apply sm:w-[384px] sm:h-[384px] w-[150px] h-[150px] mx-auto mb-10;
+        }
+        .title{
+            @apply text-center
+        }
+    }
+}

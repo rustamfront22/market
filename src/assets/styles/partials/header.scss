@@ -1,0 +1,31 @@
+.header{
+  @apply border-b;
+  &__content{
+    @apply flex justify-between items-center py-5 ;
+  }
+  svg{
+    @apply text-3xl;
+  }
+  &__navbar{
+    ul{
+      @apply flex gap-8;
+      li{
+        a{
+          @apply hover:text-hover transition font-medium;
+        }
+      }
+    }
+  }
+  &__cart{
+    @apply text-2xl border text-secondary rounded-full w-9 h-9 relative;
+    a{
+      @apply flex items-center justify-center p-1;
+      svg{
+        @apply w-full h-full object-contain;
+      }
+      span{
+        @apply text-xs bg-red-600 text-white w-auto px-1 h-4 flex items-center justify-center rounded-full absolute top-0 right-0;
+      }
+    }
+  }
+}

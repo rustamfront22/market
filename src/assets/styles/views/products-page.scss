@@ -1,0 +1,31 @@
+.products-page {
+    &__content {
+        @apply grid grid-cols-[minmax(0,_320px)_minmax(0,_1fr)] gap-5 mt-9;
+        .category-list {
+            border-radius: 8px;
+            background: var(--sunset-orange-secondary-bg-color-bg-alternate, #eef3f7);
+            box-shadow: 0px 8px 20px 0px rgba(67, 40, 154, 0.1);
+            padding: 15px;
+            ul {
+                li {
+                    color: var(--sunset-orange-text-color-text, #353359);
+                    font-family: Rubik;
+                    font-size: 15px;
+                    font-weight: 300;
+                    line-height: 160%;
+                    transition: .3s;
+                    &:hover {
+                        color: #1cbcdd;
+                    }
+                }
+            }
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    &__list {
+        @apply grid grid-cols-1 gap-8 2xl:grid-cols-3 xl:grid-cols-3 sm:grid-cols-2;
+    }
+}

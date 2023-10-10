@@ -1,0 +1,53 @@
+.product__card{
+  @apply bg-gray-50 p-4 shadow-secondary/10 shadow rounded-xl overflow-hidden w-full flex flex-col;
+  &-img{
+    @apply relative h-48 overflow-hidden -m-4 mb-5;
+    img{
+      @apply object-cover w-full h-full;
+    }
+    .sale{
+      @apply absolute top-1 right-1 block bg-amber-500 px-2 py-1 rounded-md text-white text-xs;
+    }
+  }
+  &-category{
+    @apply capitalize text-gray-400 mb-3;
+  }
+  &-name{
+    @apply text-lg font-medium
+  }
+  &-price{
+    @apply text-2xl font-montserrat text-secondary mb-2 flex items-end ;
+  }
+  &-discount{
+    @apply text-lg text-gray-400 font-montserrat flex gap-3 items-end ml-2;
+    s{
+      @apply decoration-2
+    }
+    span{
+      @apply text-sm font-rubik font-medium text-yellow-500;
+    }
+  }
+  &-btn{
+    @apply mt-4;
+    .btn{
+      @apply w-full;
+    }
+  }
+  &-count{
+    @apply flex items-center gap-1;
+    .btn{
+      @apply px-2 w-auto m-0;
+    }
+    input{
+      @apply w-full h-10 border border-primary text-primary rounded-2xl text-center outline-none;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        @apply appearance-none;
+      }
+    }
+
+  }
+  &-stock{
+    @apply whitespace-nowrap flex items-center rounded-2xl mb-auto;
+  }
+}

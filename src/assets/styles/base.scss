@@ -1,0 +1,12 @@
+#app{
+  @apply flex flex-col h-full;
+}
+.footer{
+  @apply mt-auto;
+}
+body{
+  @apply font-rubik text-text h-full;
+}
+html{
+  @apply h-full;
+}

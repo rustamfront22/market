@@ -1,0 +1,92 @@
+.card-content {
+    padding: 32px;
+    border-radius: 16px;
+    background: var(--sunset-orange-secondary-bg-color-bg-alternate, #eef3f7);
+    box-shadow: 0px 1px 3px 0px rgba(67, 40, 154, 0.15);
+    display: flex;
+    gap: 30px;
+    .card-content_carousel {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        border: solid 1px #4b4b4b71;
+        border-radius: 16px;
+        .carousel__item {
+            margin: 5px;
+            img {
+                display: flex;
+                align-items: center;
+                border-radius: 16px;
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+    }
+    .product__card-price {
+        color: #ed1111;
+        font-family: Amatic SC;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 125%;
+    }
+    .card-content_info-title {
+        .card-rs {
+            display: flex;
+            gap: 30px;
+            @media (max-width: 590px) {
+                .product__card-rating {
+                    font-size: 12px;
+                }
+                .card-content-stock {
+                    font-size: 12px;
+                }
+            }
+            @media (max-width: 485px) {
+                
+                .product__card-rating {
+                    font-size: 10px;
+                }
+                .card-content-stock {
+                    font-size: 10px;
+                }
+            }
+            .product__card-rating {
+            }
+        }
+        border-bottom: solid 1px #d4dce7;
+        margin-bottom: 8px;
+    }
+    .card-content_info-pay {
+        margin-bottom: 30px;
+        .product__card-discount {
+            color: var(--sunset-orange-text-color-text-secondary, #221e66);
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+    .description {
+        &-title {
+            color: var(--sunset-orange-text-color-text, #353359);
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-top: 5px;
+        }
+    }
+    h3 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 125%;
+        margin-bottom: 12px;
+    }
+    .carousel-mini{
+        .carousel__item{
+            @apply w-14 h-14 border;
+            img{
+                @apply w-full h-full object-contain;
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.carousel {
+  @apply text-start;
+  &__pagination {
+    @apply -mt-8 relative pb-8;
+  }
+}

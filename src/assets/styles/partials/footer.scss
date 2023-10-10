@@ -1,0 +1,30 @@
+.footer {
+    @apply bg-secondary;
+    color: white;
+    &__content {
+        @apply flex justify-evenly py-5;
+    }
+    svg {
+        @apply text-3xl;
+    }
+
+    &__navbar {
+        &-list {
+            @apply flex;
+            ul{
+                @apply grid grid-cols-3 gap-x-28;
+                li{
+                    @apply cursor-pointer
+                }
+            }
+        }
+    }
+    h3 {
+        @apply font-rubik font-medium mb-4;
+    }
+    ul {
+        li {
+            @apply hover:text-hover transition flex flex-col mb-2 font-light font-rubik ;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.products__new {
+  @apply py-14;
+  .carousel {
+    @apply -mx-4 text-start;
+  }
+
+  .product__card {
+    @apply mx-4;
+  }
+}
