@@ -1,9 +1,16 @@
 .basket {
     &__content{
-        @apply grid grid-cols-[minmax(0,_1fr)_minmax(0,_320px)] gap-5
+        @apply grid grid-cols-[minmax(0,_1fr)_minmax(0,_320px)] gap-5;
+        @media (max-width: 320px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__info{
-        @apply border h-min
+        @apply border h-min ;
+        @media (max-width: 320px) {
+            text-align: center;
+        }
     }
     &__list{
         @apply mb-10 border-x rounded-lg overflow-hidden;

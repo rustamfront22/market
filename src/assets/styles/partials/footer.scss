@@ -3,6 +3,11 @@
     color: white;
     &__content {
         @apply flex justify-evenly py-5;
+        .footer__cart{
+            @media (max-width: 640px) {
+                display: none;
+            }
+        }
     }
     svg {
         @apply text-3xl;
@@ -13,6 +18,11 @@
             @apply flex;
             ul{
                 @apply grid grid-cols-3 gap-x-28;
+                @media (max-width: 320px) {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: 20px;
+
+                }
                 li{
                     @apply cursor-pointer
                 }

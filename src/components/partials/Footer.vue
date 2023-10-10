@@ -12,12 +12,13 @@
           </div>
         </nav>
 
-        <div class="footer__cart"></div>
-        <ul>
-          <h3 class="font-rubik text-1xl mb-4">Магазин</h3>
-          <li><RouterLink :to="{ name: 'index' }">Главная</RouterLink></li>
-          <li><RouterLink :to="{ name: 'products' }">Каталог</RouterLink></li>
-        </ul>
+        <div class="footer__cart">
+          <ul>
+            <h3 class="font-rubik text-1xl mb-4">Магазин</h3>
+            <li><RouterLink :to="{ name: 'index' }">Главная</RouterLink></li>
+            <li><RouterLink :to="{ name: 'products' }">Каталог</RouterLink></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
