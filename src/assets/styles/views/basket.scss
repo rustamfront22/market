@@ -5,10 +5,17 @@
             display: flex;
             flex-direction: column;
         }
+        @media (max-width: 425px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__info{
         @apply border h-min ;
         @media (max-width: 320px) {
+            text-align: center;
+        }
+        @media (max-width: 425px) {
             text-align: center;
         }
     }
