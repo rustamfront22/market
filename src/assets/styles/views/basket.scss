@@ -15,7 +15,14 @@
         }
     }
     &__info{
-        @apply border h-min ;
+        @apply border h-min p-2 rounded-lg overflow-hidden;
+        p{
+            font-family: rubik;
+            color: #454D66;
+        }
+        span{
+            color: #309975;
+        }
         @media (max-width: 320px) {
             text-align: center;
         }
