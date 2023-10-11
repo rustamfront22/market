@@ -9,6 +9,10 @@
             display: flex;
             flex-direction: column;
         }
+        @media (max-width: 520px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__info{
         @apply border h-min ;
@@ -16,6 +20,9 @@
             text-align: center;
         }
         @media (max-width: 425px) {
+            text-align: center;
+        }
+        @media (max-width: 520px) {
             text-align: center;
         }
     }
