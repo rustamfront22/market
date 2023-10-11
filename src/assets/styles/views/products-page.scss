@@ -31,5 +31,11 @@
 
     &__list {
         @apply grid grid-cols-1 gap-8 2xl:grid-cols-3 xl:grid-cols-3 sm:grid-cols-2;
+        .product__card-count{
+            @media (max-width: 425px) {
+                flex-direction: column;
+                align-items: stretch
+            }
+        }
     }
 }
