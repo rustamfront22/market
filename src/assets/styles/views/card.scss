@@ -35,6 +35,10 @@
   }
   &-count{
     @apply flex items-center gap-1;
+    @media (max-width: 425px) {
+      flex-direction: column;
+      align-items: stretch
+  }
     .btn{
       @apply px-2 w-auto m-0;
     }
