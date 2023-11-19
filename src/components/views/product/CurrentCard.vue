@@ -44,15 +44,16 @@
           </div>
           <div class="card-content_info-pay">
             <h3>Цена</h3>
-            <div class="product__card-price">{{ data.price }} $</div>
+
+            <div class="product__card-price">
+              {{
+                data.price -
+                ((data.price * data.discountPercentage) / 100).toFixed()
+              }}
+              $
+            </div>
             <div class="product__card-discount">
-              <s
-                >{{
-                  data.price -
-                  ((data.price * data.discountPercentage) / 100).toFixed()
-                }}
-                сум</s
-              >
+              <s>{{ data.price }} $</s>
               <span>скидка {{ data.discountPercentage }}%</span>
             </div>
           </div>
@@ -65,9 +66,8 @@
         <!-- <pre>{{ data }}</pre> -->
       </div>
     </div>
-    <NewProducts />
+      <NewProducts />
   </div>
-  
 </template>
 <script setup>
 import { Carousel, Slide } from "vue3-carousel";
@@ -86,5 +86,5 @@ const breakpoints = ref({
   1536: {
     itemsToShow: 6,
   },
-},)
+});
 </script>
